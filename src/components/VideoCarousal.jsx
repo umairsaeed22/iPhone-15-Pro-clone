@@ -170,6 +170,7 @@ const VideoCarousel = () => {
                   } pointer-events-none`}
                   preload="auto"
                   muted
+                  autoPlay={true}
                   ref={(el) => (videoRef.current[i] = el)}
                   onEnded={() =>
                     i !== 3
@@ -181,7 +182,7 @@ const VideoCarousel = () => {
                   }
                   onLoadedMetadata={(e) => handleLoadedMetaData(i, e)}
                 >
-                  <source src={list.video} type="video/mp4" />
+                  <source src={list.video} type="video/mp4"/>
                 </video>
               </div>
 

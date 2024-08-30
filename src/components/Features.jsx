@@ -48,7 +48,7 @@ const Features = () => {
           </div>
           <div className='flex=center flex-col sm:px-10'>
             <div className='relatice h-[50vh] w-full flex items-center'>
-              <video playsInline id="exploreVideo" className='w-full h-full object-cover object-center' preload='none' muted autoPlay ref={videoRef}>
+              <video playsInline id="exploreVideo" className='w-full h-full object-cover object-center' muted autoPlay ref={videoRef}>
                 <source src={exploreVideo} type='video/mp4' />
               </video>
             </div>
